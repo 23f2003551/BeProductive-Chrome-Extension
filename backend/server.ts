@@ -103,6 +103,7 @@ app.get('/session/:id/analytics', (req: Request, res: Response) => {
     let unproductivedomainsVisited: string[]=[]
     let totalunproductiveJumps=0
     let lastProductive=true
+    let totalunproductiveVisits=0
 
     logs.forEach((a) => {
         const duration=a.endTime-a.startTime
@@ -118,6 +119,7 @@ app.get('/session/:id/analytics', (req: Request, res: Response) => {
             lastProductive=false
             
             unproductiveTime+= duration
+            totalunproductiveVisits+=1
             if(!unproductivedomainsVisited.includes(a.domain)){
                 unproductivedomainsVisited.push(a.domain)
             }
@@ -136,7 +138,8 @@ app.get('/session/:id/analytics', (req: Request, res: Response) => {
         sessionDuration:session.duration,
         actualsessionDuration,
         unproductivedomainsVisited,
-        totalunproductiveJumps
+        totalunproductiveJumps,
+        totalunproductiveVisits
     })
 })
 

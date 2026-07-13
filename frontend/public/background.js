@@ -126,3 +126,4 @@ chrome.windows.onFocusChanged.addListener(async (windowId) => {
         }
     }
 });
+
