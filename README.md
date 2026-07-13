@@ -6,6 +6,8 @@ BeProductive is a productivity tracking web application with a Chrome extension 
 
 During a session, the extension continuously monitors the active browser tab and classifies the user's browsing time as either **productive** or **unproductive** based on the configured list of productive domains. When the session ends (either automatically when the timer expires or manually by the user), a detailed analytics report is generated to help users understand how they spent their time.
 
+<img width="575" height="452" alt="Image" src="https://github.com/user-attachments/assets/ac1854f1-f491-4f21-a2c0-5527fcacd167" />
+
 ---
 
 ## Features
@@ -81,6 +83,10 @@ List of Unproductive Domains Visited:
 Total Unproductive Jumps: 7
 ```
 
+<img width="558" height="482" alt="Image" src="https://github.com/user-attachments/assets/3581fdf8-39fe-4c91-81eb-892df423c903" />
+
+<img width="437" height="492" alt="Image" src="https://github.com/user-attachments/assets/34c00515-b0ac-4def-bdce-f507a3837a45" />
+
 ---
 
 
@@ -96,7 +102,6 @@ Total Unproductive Jumps: 7
 
 * Daily and weekly productivity reports
 * Productivity trends and charts
-* Export analytics as PDF or CSV
 * Notifications when spending too much time on distracting websites
 
 ---
