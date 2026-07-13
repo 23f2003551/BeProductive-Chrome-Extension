@@ -21,6 +21,8 @@ During a session, the extension continuously monitors the active browser tab and
 * 🔄 Count distractions by tracking switches to unproductive websites.
 * 📈 Display session analytics after every session.
 * 🛑 End sessions manually or automatically when the timer expires.
+* 📊 Compare with previous session — instantly see how your productive time, unproductive time, and domain jumps stack up against your last session
+* 📄 Export to PDF — download a clean summary report of any session for your records
 
 ---
 
@@ -90,6 +92,10 @@ Total Unproductive Jumps: 7
 
 ---
 
+## Export to PDF
+Once a session ends, BeProductive lets you export a clean, shareable PDF report summarizing your results — total productive and unproductive time, session duration, unproductive domain jumps and visits and the full list of distracting domains visited. It's a quick way to keep a record of your sessions over time or just reflect on your habits without digging back through the app.
+
+<img width="953" height="480" alt="Image" src="https://github.com/user-attachments/assets/8102e443-68df-4428-aba5-2154ee10645c" />
 
 
 ## Use Cases
