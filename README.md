@@ -1,12 +1,13 @@
 # BeProductive – Chrome Productivity Tracker
 
+
 ## Overview
 
 BeProductive is a productivity tracking web application with a Chrome extension that helps users stay focused during work or study sessions. The application allows users to create a timed productivity session, define which websites are considered productive, and automatically track browsing activity using the Chrome Tabs API.
 
 During a session, the extension continuously monitors the active browser tab and classifies the user's browsing time as either **productive** or **unproductive** based on the configured list of productive domains. When the session ends (either automatically when the timer expires or manually by the user), a detailed analytics report is generated to help users understand how they spent their time.
 
-<img width="575" height="452" alt="Image" src="https://github.com/user-attachments/assets/ac1854f1-f491-4f21-a2c0-5527fcacd167" />
+<img width="597" height="436" alt="Image" src="https://github.com/user-attachments/assets/db31d6df-5870-4e7b-8498-040ed7c4d228" />
 
 ---
 
@@ -20,6 +21,8 @@ During a session, the extension continuously monitors the active browser tab and
 * 🔄 Count distractions by tracking switches to unproductive websites.
 * 📈 Display session analytics after every session.
 * 🛑 End sessions manually or automatically when the timer expires.
+* 📊 Compare with previous session — instantly see how your productive time, unproductive time, and domain jumps stack up against your last session
+* 📄 Export to PDF — download a clean summary report of any session for your records
 
 ---
 
@@ -85,10 +88,16 @@ Total Unproductive Jumps: 7
 
 <img width="558" height="482" alt="Image" src="https://github.com/user-attachments/assets/3581fdf8-39fe-4c91-81eb-892df423c903" />
 
+<br/>
+
 <img width="437" height="492" alt="Image" src="https://github.com/user-attachments/assets/34c00515-b0ac-4def-bdce-f507a3837a45" />
 
 ---
 
+## Export to PDF
+Once a session ends, BeProductive lets you export a clean, shareable PDF report summarizing your results — total productive and unproductive time, session duration, unproductive domain jumps and visits and the full list of distracting domains visited. It's a quick way to keep a record of your sessions over time or just reflect on your habits without digging back through the app.
+
+<img width="953" height="480" alt="Image" src="https://github.com/user-attachments/assets/8102e443-68df-4428-aba5-2154ee10645c" />
 
 
 ## Use Cases
