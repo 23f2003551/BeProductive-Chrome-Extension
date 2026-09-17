@@ -89,6 +89,7 @@ app.get('/session/:id/analytics', function (req, res) {
     var unproductivedomainsVisited = [];
     var totalunproductiveJumps = 0;
     var lastProductive = true;
+    var totalunproductiveVisits = 0;
     logs.forEach(function (a) {
         var duration = a.endTime - a.startTime;
         if (a.isProductive) {
@@ -101,6 +102,7 @@ app.get('/session/:id/analytics', function (req, res) {
             }
             lastProductive = false;
             unproductiveTime += duration;
+            totalunproductiveVisits += 1;
             if (!unproductivedomainsVisited.includes(a.domain)) {
                 unproductivedomainsVisited.push(a.domain);
             }
@@ -116,7 +118,8 @@ app.get('/session/:id/analytics', function (req, res) {
         sessionDuration: session.duration,
         actualsessionDuration: actualsessionDuration,
         unproductivedomainsVisited: unproductivedomainsVisited,
-        totalunproductiveJumps: totalunproductiveJumps
+        totalunproductiveJumps: totalunproductiveJumps,
+        totalunproductiveVisits: totalunproductiveVisits
     });
 });
 app.listen(port, function () {
